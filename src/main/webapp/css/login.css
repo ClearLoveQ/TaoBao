@@ -1,0 +1,68 @@
+/*登陆页面*/
+.login{
+	position:absolute;
+	left:815px;
+	top:330px;
+	width:500px;
+	height:440px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:25px;
+	font-style:normal;
+	margin:30px;
+	opacity:0.55;
+}
+.register{
+	position:relative;
+	left:40px;
+	top:37px;
+	background-color:#492626;
+	color:#FF832C;
+	width:245px;
+	height:50px;
+	display: inline-block;
+}
+#login_0{
+	position: absolute;
+	left:45px;
+	top:90px;
+}
+.login_1{
+	display:inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:23px;
+	width:260px;
+	height:46px;
+	margin-top: 20px;
+}
+#but{
+	position:relative;
+	left:90px;
+	top:37px;
+	background-color:#492626;
+	color:#FF832C;
+	width:245px;
+	height:50px;
+	display: inline-block;
+}
+#information{
+	position:relative;
+	left:6px;
+	top:62px;
+}
+body{
+	background-size:100%;
+	background-image: url("../images/city/city5.jpg");
+}
+#mes_0{
+	position: absolute;
+	left:139px;
+	top:232px;
+	width:1269px;
+	height:100px;
+	color:#FF832C;
+	font-size: 50px;
+	font-weight: bold;
+	opacity: 0.65;
+}

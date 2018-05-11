@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="cn.tedu.store.mapper.OrderMapper">
+	<!-- 添加订单 -->
+	<insert id="insertOrder" parameterType="cn.tedu.store.bean.OrderItem">
+		insert into t_order_item(
+			uid,price,sumprice,count,image,goods_id,payment_status,order_status,order_id,
+			created_user,created_time,modified_user,modified_time
+		)values(
+			#{uid},#{price},#{sumPrice},#{count},#{image},#{goodsId},#{paymentStatus},
+			#{orderStatus},#{orderId},
+			#{createdUser},#{createdTime},#{modifiedUser},#{modifiedTime}
+		);
+	</insert>
+	<!-- 返回该登陆用户的所有订单 -->
+	<select id="selectOrder" resultType="cn.tedu.store.bean.OrderItem">
+		select id,uid,price,sumprice as sumPrice,count,image,goods_id as goodsId,
+		payment_status as paymentStatus,order_status as orderStatus,order_id as orderId,
+		created_user as createdUser,created_time as createdTime,
+		modified_user as modifiedUser,modified_time as modifiedTime
+		from t_order_item
+		where uid=#{uid}
+	</select>
+	<!-- 支付成功,更新登陆用户的订单 -->
+	<update id="updateOrder" parameterType="cn.tedu.store.bean.OrderItem">
+		update t_order_item
+		set payment_status=1
+		where id=#{id}
+	</update>
+</mapper>

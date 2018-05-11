@@ -1,0 +1,21 @@
+/*主页面*/
+body{
+	background-image: url("../images/city/city10.jpg");
+	background-size:100%;
+}
+#index{
+		position:absolute;
+		left:455px;
+		top:265px; 
+		width: 600px;
+		height: 200px;
+		background-color:#492626;
+		font-size: 60px;
+		font-style: normal;
+	}
+	#start{
+		color:#FF832C;
+		position: absolute;
+		left:120px;
+		top:57px;
+	}

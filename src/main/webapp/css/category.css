@@ -1,0 +1,76 @@
+/* 商品分类展示页面 一级分类*/
+body{
+	background-image: url("../images/city/city4.jpg");
+	background-size:100%;
+}
+#cate{
+	position: absolute;
+	left:38px;
+	top:210px;
+	background-color:#492626;
+	width:791px;
+	height:780px;
+	color:#FF832C;
+	opacity: 0.65;
+}
+#cateName{
+	position:relative;
+	left:5px;
+	top:5px;
+}
+.ca1{
+	position:relative;
+	left:50px;
+	top:20px;
+	width:300px;
+	height:200px;
+	font-size: 30px;
+	margin:20px;
+	float:left;
+}
+.ca2{
+	position: relative;
+	width:120px;
+	height:34px;
+	left:10px;
+	top:10px;
+	color:#492626;
+	margin:3px;
+}
+.pic{
+	float:left;
+	position: absolute;
+	width:160px;
+	height:210px;
+	left:123px;
+	top:14px;
+}
+.img_book{
+	width: 161px;
+	height:210px;
+}
+#sub{
+	color:#f57900;
+	background-color:#492626;
+}
+#technology{
+	position:absolute;
+	left:871px;
+	top:210px;
+	width:521px;
+	height:780px;
+}
+#img_right{
+	opacity:0.65;
+	width:523px;
+	height:781px;
+}
+#maxim{
+	position:absolute;
+	left:1520px;
+	top:197px;
+	width:10px;
+	font-size:35px;
+	opacity: 0.65;
+	color:#FF832C;
+}

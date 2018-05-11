@@ -1,0 +1,41 @@
+/*支付页面*/
+body{
+	background-image: url("../images/city/city13.jpg");
+	background-size:100%;
+}
+.pay{
+	position:absolute;
+	left:11px;
+	top:175px;
+	width:1351px;
+	height:389px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:40px;
+	font-style:normal;
+	margin:30px;
+	opacity: 0.65;
+}
+.pay_1{
+	position:absolute;
+	left:246px;
+	top:72px;
+}
+#BankPwd{
+	display:inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	width:410px;
+	height:68px;
+}
+.confirm{
+	display:block;
+	background-color:#492626;
+	color:#FF832C;
+	width:600px;
+	height:100px;
+	position:relative;
+	left:118px;
+	top:50px;
+	font-size: 40px;
+}

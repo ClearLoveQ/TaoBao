@@ -1,0 +1,40 @@
+/*购物车页面css*/
+body{
+	background-image: url("../images/city/city17.jpg");
+	background-size:100%;
+}
+.cart{
+	position:absolute;
+	left:11px;
+	top:175px;
+	width:1351px;
+	height:720px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:40px;
+	font-style:normal;
+	margin:30px;
+	overflow:auto;
+	opacity: 0.65;
+}
+.img{
+	width:250px;
+	height:115px;
+}
+.span_0{
+	display: inline-block;
+	color:#FF832C;
+	width:150px;
+	height:115px;
+	margin-left:0px;
+	margin-top: 35px;
+}
+.span_1{
+	display: inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	width:130px;
+	height:80px;
+	margin-left:0px;
+	margin-top: 10px;
+}

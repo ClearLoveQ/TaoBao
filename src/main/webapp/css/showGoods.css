@@ -1,0 +1,34 @@
+/*商品二级分类css*/
+body{
+	background-image: url("../images/city/city11.jpg");
+	background-size:100%;
+}
+#ware_0{
+	position: absolute;
+	left:38px;
+	top:218px;
+	width:1354px;
+	height:678px;
+	background-color:#492626;
+	opacity: 0.65;
+}
+.row_0{
+	float:left;
+	margin:10px;
+	height:100px;
+	color:#FF832C
+}
+.span_0{
+	display: inline-block;
+	color:#FF832C;
+	width:300px;
+	height:115px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.sub{
+	background-color:#492626;
+	color:#FF832C;
+	width:245px;
+	height:50px;
+}

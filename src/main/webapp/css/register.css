@@ -1,0 +1,54 @@
+/*用户注册样式*/
+body{
+	background-image: url("../images/city/city2.jpg");
+	background-size:100%;
+}
+.register{
+	position:absolute;
+	left:1100px;
+	top:125px;
+	width:550px;
+	height:600px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:25px;
+	font-style:normal;
+	margin:30px;
+	padding-left:35px;
+	padding-top: 30px;
+	opacity: 0.65;
+}
+.reg_0{
+	display:inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:23px;
+	width:190px;
+	height:45px;
+	margin-top: 20px;
+	line-height:176%;
+}
+.reg_1{
+	display:inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:23px;
+	width:285px;
+	height:40px;
+	margin-top: 20px;
+}
+#information{
+	position:relative;
+	left:6px;
+	top:62px;
+}
+.but{
+	display:inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:23px;
+	width:285px;
+	height:40px;
+	margin-top: 10px;
+}
+

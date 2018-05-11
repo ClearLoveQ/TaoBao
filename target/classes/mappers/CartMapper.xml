@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="cn.tedu.store.mapper.CartMapper">
+	<!-- 往购物车添加商品 -->
+	<insert id="insertCart" parameterType="cn.tedu.store.bean.Cart">
+		insert into t_cart(
+			uid,price,goods_id,image,count
+		)values(
+			#{uid},#{price},#{goodsId},#{image},#{count}
+		);
+	</insert>
+	<!-- 返回该用户的所有购物车商品 -->
+	<select id="selectByUid" resultType="cn.tedu.store.bean.Cart">
+		select id,uid,price,goods_id as goodsId,image,count,
+		created_user as createdUser,created_time as createdTime,
+		modified_user as modifiedUser,modified_time as modifiedTime
+		from t_cart
+		where uid=#{uid}
+	</select>
+</mapper>

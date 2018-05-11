@@ -1,0 +1,106 @@
+/*地址管理css*/
+body{
+	background-image: url("../images/city/city16.jpg");
+	background-size:100%;
+}
+.address_0{
+	position:absolute;
+	left:11px;
+	top:175px;
+	width:1351px;
+	height:635px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:40px;
+	font-style:normal;
+	margin:30px;
+	opacity: 0.65;
+}
+.address_1{
+	position:absolute;
+	font-size:40px;
+	left:81px;
+	top:45px;
+}
+.address_2{
+	position:relative;
+	font-size:40px;
+	left:175px;
+	top:179px;
+}
+.pcc{
+	display: inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:25px;
+	width:230px;
+	height:50px;
+	opacity: 0.65;
+}
+.recv{
+	display: inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:40px;
+	width:300px;
+	height:50px;
+	margin: 15px;
+	margin-left: 101px;
+}
+.recv_3{
+	display: inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	width:300px;
+	height:50px;
+	margin: 15px;
+	margin-left: 50px;
+}
+#but{
+	position:relative;
+	left:154px;
+	top:45px;
+}
+.address_3{
+	position:absolute;
+	left:11px;
+	top:839px;
+	width:1351px;
+	height:500px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:40px;
+	font-style:normal;
+	margin:30px;
+	opacity: 0.65;
+}
+.all_address0{
+	display: inline-block;
+	position: relative;
+	left:72px;
+	top:41px;
+}
+.but{
+	display:block;
+	position: relative;
+	width:408px;
+	height:74px;
+	background-color:#492626;
+	color:#FF832C;
+	left:72px;
+	top:72px;
+  font-size: 21px;
+}
+#all_address{
+	position: relative;
+	left:70px;
+	top:110px;
+	font-size: 25px;
+	overflow: auto;
+}
+.in_0{
+	display: inline-block;
+	width: 250px;
+	height:50px;
+	font-family: fantasy;
+}

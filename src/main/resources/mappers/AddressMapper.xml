@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="cn.tedu.store.mapper.AddressMapper">
+	<!-- 添加新的收货人地址 -->
+	<insert id="insertAddress" parameterType="cn.tedu.store.bean.Address">
+		insert into t_address(
+			id,uid,recv_name,recv_province,recv_city,recv_area,recv_district,recv_phone,
+			created_user,created_time,modified_user,modified_time
+		) values(
+			#{id},#{uid},#{recvName},#{recvProvince},#{recvCity},#{recvArea},#{recvDistrict},
+			#{recvPhone},#{createdUser},#{createdTime},
+			#{modifiedUser},#{modifiedTime}
+		)
+	</insert>
+	<!-- 根据用户的id查询他的地址信息 -->
+	<select id="selectByUid" resultType="cn.tedu.store.bean.Address">
+		select
+		  id,uid,recv_name as recvName,recv_province as recvProvince,recv_city as recvCity,recv_area as recvArea,
+		  recv_district as recvDistrict,recv_phone as recvPhone,
+			created_user as createdUser,
+			created_time as createdTime,modified_user as modifiedUser,modified_time as modifiedTime
+		from t_address
+		where uid=#{uid}
+	</select>
+</mapper>
