@@ -1,5 +1,7 @@
 package cn.tedu.store.service;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import cn.tedu.store.bean.User;
@@ -47,6 +49,12 @@ public class UserService implements IUserService{
 	 */
 	public User selectUserByEmail(String email) {
 		return userMapper.selectUserByEmail(email);
+	}
+	/**
+	 * 管理员查看所有的用户
+	 */
+	public List<User> getAllUsers() {	
+		return userMapper.getAllUsers();
 	}
 	
 

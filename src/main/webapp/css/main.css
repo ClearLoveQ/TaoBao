@@ -19,3 +19,33 @@ body{
 		left:120px;
 		top:57px;
 	}
+#search_0{
+	width:800px;
+	height:70px;
+	position:absolute;
+	left:361px;
+	top:550px;
+	color:#FF832C;
+	opacity: 0.65;
+	align-items:center;
+	text-align:center;
+	font-size: 35px;
+}
+#search{
+	width:350px;
+	height:50px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size: 25px;
+}
+#seek{
+	display:block;
+	height:56px;
+	width:105px;
+	background-color:#492626;
+	color:#FF832C;
+	position:absolute;
+	top:0px;
+	left:681px;
+	font-size: 25px;
+}

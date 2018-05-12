@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.tedu.store.bean.ResponseResult;
 import cn.tedu.store.bean.User;
+import cn.tedu.store.service.IPowerService;
 import cn.tedu.store.service.IUserService;
 
 /**
@@ -22,6 +23,8 @@ import cn.tedu.store.service.IUserService;
 public class UserController {
 	@Resource
 	private IUserService userService;
+	@Resource
+	private IPowerService powerService;
 	/**
 	 * 显示用户登陆页面
 	 * @return
@@ -39,11 +42,21 @@ public class UserController {
 	public ResponseResult<Void> login(HttpSession session,String username,String password){
 		ResponseResult<Void> rr=new ResponseResult<Void>();
 		User user=userService.login(username, password);
-		rr.setState(1);
-		rr.setMessage("登陆成功");
 		
 		//登陆成功后绑定登陆人
 		session.setAttribute("user",user);
+		
+		
+		//判断此人的权限
+		if(powerService.backPower(user.getId())!=1) {
+			rr.setState(0);
+			rr.setMessage("普通用户而已嘛!");
+			session.setAttribute("power",0);
+		}else {
+			rr.setState(1);
+			rr.setMessage("管理员大大!");
+			session.setAttribute("power",1);
+		}
 		return rr;
 	}
 	/**

@@ -1,0 +1,59 @@
+/*管理员界面*/
+body{
+	background-image: url("../images/city/city17.jpg");
+	background-size: 100%;
+}
+.left{
+	width:300px;
+	height:101px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size: 40px;
+	font-style: normal;
+	margin: 30px;
+	float: left;
+	opacity: 0.65;
+	text-align: center;
+	padding-top:47px;
+}
+#left_1{
+	width:655px;
+}
+#user_list{
+	position:absolute;
+	top:222px;
+	left:38px;
+	width:300px;
+	height:600px;
+	overflow: scroll;
+	background-color:#492626;
+	color:#FF832C;
+	font-size: 40px;
+	opacity: 0.65;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+#order_list{
+	position:absolute;
+	top:222px;
+	left:397px;
+	width:635px;
+	height:600px;
+	overflow: scroll;
+	background-color:#492626;
+	color:#FF832C;
+	font-size: 40px;
+	opacity: 0.65;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+#add_books{
+	background-color:#492626;
+	color:#FF832C;
+	opacity: 0.65;
+	position:absolute;
+	width:300px;
+	height:636px;
+	top:222px;
+	left:1115px;
+}

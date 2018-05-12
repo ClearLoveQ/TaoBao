@@ -23,6 +23,9 @@
 	<div class="header04" onclick="showOrderFun()">
 			<div class="header5">ORDER</div>
 	</div>
+	<div id="manager_0" onclick="showManagerFun()">
+		<div id="manager_1">管理员大大</div>
+	</div>
 </div>
 <script type="text/javascript">
 	function showIndexFun(){
@@ -39,6 +42,22 @@
 	}
 	function showOrderFun(){
 		window.location.href="${pageContext.request.contextPath}/order/showOrder.do";
+	}
+	function showManagerFun(){
+		window.location.href="${pageContext.request.contextPath}/manager/showManager.do";
+	}
+</script>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	window.onload=function(){
+		var power=${power}
+		alert(power);
+		if(power==0){
+			$("#manager_0").css("display","none");
+		}else{
+			$("#manager_0").css("display","");
+		}
+		
 	}
 </script>
 </html>

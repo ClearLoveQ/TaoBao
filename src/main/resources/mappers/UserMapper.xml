@@ -26,5 +26,12 @@
 		from t_user
 		where email=#{email}
 	</select>
+	
+	<!-- 管理员要查看所有的用户信息 -->
+	<select id="getAllUsers" resultType="cn.tedu.store.bean.User">
+		select id,username,password,email,phone,image,gender,created_user as createdUser,created_time as createdTime,
+		modified_user as modifiedUser,modified_time as modifiedTime 
+		from t_user
+	</select>
 
 </mapper>

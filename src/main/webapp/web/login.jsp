@@ -23,7 +23,7 @@
 			<span id="information"></span>
 		</div>		
 	</div>
-	
+
 </body>
 <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
@@ -41,7 +41,10 @@
 				"success":function(obj){
 					alert(obj.state+","+obj.message);
 					if(obj.state==1){
-						//登陆成功
+						//登陆成功,访问管理员界面
+						window.location.href='${pageContext.request.contextPath}/main/showIndex.do';
+					}else if(obj.state==0){
+						//跳转到普通用户界面
 						window.location.href='${pageContext.request.contextPath}/main/showIndex.do';
 					}else{
 						$("#information").html("USERNAME OR PASSWORD IS ERROR");

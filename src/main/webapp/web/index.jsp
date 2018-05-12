@@ -12,6 +12,11 @@
 	<div id="index" onclick="showCategoryFun()">
 			<div id="start">在书海中遨游</div>
 	</div>
+	<div id=search_0>
+		YOUR WANT:<input name="search" id="search"/>
+		<input type="submit" value="SEEK" id="seek"/>
+	</div>
+	
 </body>
 <script type="text/javascript">
 	function showCategoryFun(){

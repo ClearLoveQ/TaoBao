@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import cn.tedu.store.bean.User;
+import cn.tedu.store.mapper.PowerMapper;
 import cn.tedu.store.mapper.UserMapper;
 import cn.tedu.store.service.UserService;
 
@@ -37,5 +38,11 @@ public class UserTest {
 		user.setEmail("1031861328@qq.com");
 		us.registerUser(user);
 		System.out.println("ok");
+	}
+	@Test
+	public void testPower() {
+		ApplicationContext ac=new ClassPathXmlApplicationContext("spring-dao.xml","spring-service.xml");
+		PowerMapper pm=ac.getBean("powerMapper",PowerMapper.class);
+		System.out.println(pm.backPower(1)+"权限");
 	}
 }

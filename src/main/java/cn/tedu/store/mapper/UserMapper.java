@@ -1,5 +1,7 @@
 package cn.tedu.store.mapper;
 
+import java.util.List;
+
 import cn.tedu.store.bean.User;
 
 /**
@@ -24,4 +26,9 @@ public interface UserMapper {
 	 * @return
 	 */
 	public User selectUserByEmail(String email);
+	/**
+	 *管理员 查所有的用户
+	 * @return
+	 */
+	public List<User> getAllUsers();
 }

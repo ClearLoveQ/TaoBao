@@ -1,5 +1,7 @@
 package cn.tedu.store.service;
 
+import java.util.List;
+
 import org.springframework.transaction.annotation.Transactional;
 
 import cn.tedu.store.bean.User;
@@ -35,4 +37,9 @@ public interface IUserService {
 	 * @return
 	 */
 	public User selectUserByEmail(String email);
+	/**
+	 * 管理员查看所有的用户
+	 * @return
+	 */
+	public List<User> getAllUsers();
 }

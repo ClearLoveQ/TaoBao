@@ -85,8 +85,28 @@
 			top:41px;
 			width:190px;
 		}
+		#manager_0{
+			position:absolute;
+			left:1400px;
+			width:240px;
+			height:140px;
+			background-color:#492626;
+			color:#FF832C;
+			font-size: 40px;
+			font-style: normal;
+			margin: 30px;
+		}
+		#manager_1{
+			position:relative;
+			color:#FF832C;
+			left:20px;
+			top:5px;
+			width:215px;
+			padding-top: 39px;
+			padding-left: 2px;
+		}
 .header0,.header01,.header02,.header03,.header04,
 .header1,.header2,.header3,.header4,.header5,#start
-,#index{
+,#index,#manager_0,#manager_1{
 	opacity: 0.65;
 }
