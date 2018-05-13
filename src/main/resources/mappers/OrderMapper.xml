@@ -15,7 +15,8 @@
 			#{createdUser},#{createdTime},#{modifiedUser},#{modifiedTime}
 		);
 	</insert>
-	<!-- 返回该登陆用户的所有订单 -->
+	<!-- 返回该登陆用户的所有订单 
+			此方法和管理员查看某人所有订单的方法一致-->
 	<select id="selectOrder" resultType="cn.tedu.store.bean.OrderItem">
 		select id,uid,price,sumprice as sumPrice,count,image,goods_id as goodsId,
 		payment_status as paymentStatus,order_status as orderStatus,order_id as orderId,
@@ -30,4 +31,5 @@
 		set payment_status=1
 		where id=#{id}
 	</update>
+	
 </mapper>

@@ -1,0 +1,52 @@
+/*个人信息管理界面*/
+body{
+	background-image: url("../images/city/city18.jpg");
+	background-size: 100%;
+}
+#information{
+	position:absolute;
+	left:14px;
+	top:179px;
+	width:625px;
+	height:575px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:25px;
+	font-style:normal;
+	margin:30px;
+	opacity:0.55;
+	padding-left: 40px;
+	padding-top: 35px;	
+}
+#username,#password0,#password,#email{
+	display: inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	width: 300px;
+	height:35px;
+	margin-top: 20px;
+}
+#subUpdate{
+	display: inline-block;
+	background-color:#492626;
+	color:#FF832C;
+	margin-left:80px;
+	margin-top:70px;
+	width: 400px;
+	height:50px;
+	font-size: 20px;
+}
+#advert{
+	position:absolute;
+	left:748px;
+	top:209px;
+	width:886px;
+	height:575px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:25px;
+	font-style:normal;
+	opacity:0.55;
+	padding-left: 40px;
+	padding-top: 35px;	
+}

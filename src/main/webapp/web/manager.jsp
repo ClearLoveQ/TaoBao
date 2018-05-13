@@ -12,10 +12,13 @@
 	<div class="left" onclick="getAllUsers()">ALL_USERS</div>
 	<div class="left" id="left_1">ALL_ORDERS</div>
 	<div class="left" id="left_2">ADD_BOOKS</div>
-	<div id="user_list">
-		<c:forEach items="${userList}" var="u">
-			<span onclick="getOrders(${u.id})">${u.username}</span><br>
-		</c:forEach>
+	<div class="left" id="host" onclick="hostFun()">HOST</div>
+	<div id="user_list">	
+		<c:if test="${empty orderList}">
+			<c:forEach items="${userList}" var="u">
+				<span onclick="getAllOrders(${u.id})">${u.username}</span><br>
+			</c:forEach>
+		</c:if>
 	</div>
 	<div id="order_list">
 		<c:forEach items="${orderList}" var="o">
@@ -31,8 +34,12 @@
 	function getAllUsers(){
 		window.location.href="../manager/getAllUsers.do";
 	}
-	function getOrders(uid){
-		window.location.href="../manager/getOrders.do";
+	function getAllOrders(uid){
+		window.location.href="../manager/getAllOrders.do?uid="+uid;
+		$("#user_list").html(uid);
+	}
+	function hostFun(){
+		window.location.href="../main/showIndex.do";
 	}
 </script>
 </html>

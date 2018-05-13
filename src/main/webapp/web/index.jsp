@@ -16,11 +16,16 @@
 		YOUR WANT:<input name="search" id="search"/>
 		<input type="submit" value="SEEK" id="seek"/>
 	</div>
-	
+	<div id="exit" onclick="exitFun()">
+		EXIT LOGIN
+	</div>
 </body>
 <script type="text/javascript">
 	function showCategoryFun(){
 		window.location.href="../category/showCategory.do";
+	}
+	function exitFun(){
+		window.location.href="../user/exitLogin.do";
 	}
 </script>
 </html>

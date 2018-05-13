@@ -18,7 +18,8 @@ public interface IOrderService {
 	 */
 	public void insertOrder(OrderItem orderItem);
 	/**
-	 * 返回iu该登陆用户的所有订单
+	 * 1.返回该登陆用户的所有订单
+	 * 2.管理员查看某人的订单情况
 	 * @param uid
 	 * @return
 	 */

@@ -9,7 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import cn.tedu.store.bean.OrderItem;
 import cn.tedu.store.bean.User;
+import cn.tedu.store.service.IOrderService;
 import cn.tedu.store.service.IUserService;
 
 /**
@@ -22,6 +24,8 @@ import cn.tedu.store.service.IUserService;
 public class ManagerPower {
 	@Resource
 	private IUserService userService;
+	@Resource
+	private IOrderService orderService;
 	/**
 	 * 判断此人是否可以跳转到管理员界面
 	 * @return
@@ -45,6 +49,17 @@ public class ManagerPower {
 	public String getAllUsers(ModelMap map) {
 		List<User> userList=userService.getAllUsers();
 		map.addAttribute("userList",userList);
+		return "manager";
+	}
+	/**
+	 *管理员查看该用户的所有订单
+	 * @param uid
+	 * @return
+	 */
+	@RequestMapping("/getAllOrders.do")
+	public String getAllOrders(Integer uid,ModelMap map) {
+		List<OrderItem> orderList=orderService.selectOrder(uid);
+		map.addAttribute("orderList",orderList);
 		return "manager";
 	}
 }

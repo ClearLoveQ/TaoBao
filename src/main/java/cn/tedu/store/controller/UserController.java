@@ -124,4 +124,16 @@ public class UserController {
 		rr.setMessage("邮箱可以使用");
 		return rr;
 	}
+	@RequestMapping("/showPersonInfo.do")
+	public String showPersonInfo(HttpSession session){
+		return "personInfo";
+	}
+	/**
+	 * 退出登陆
+	 * @return
+	 */
+	@RequestMapping("/exitLogin.do")
+	public String exitLogin(HttpSession session) {
+		return "redirect:showLogin.do";
+	}
 }

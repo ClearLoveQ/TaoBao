@@ -49,3 +49,18 @@ body{
 	left:681px;
 	font-size: 25px;
 }
+#exit{
+	position:absolute;
+	left:11px;
+	top:175px;
+	width:217px;
+	height:95px;
+	background-color:#492626;
+	color:#FF832C;
+	font-size:35px;
+	font-style:normal;
+	margin:30px;
+	padding-left:23px;
+	padding-top:55px;
+	opacity: 0.65;
+}
