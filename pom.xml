@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13.1</version>
 		</dependency>
 			<!-- 消息摘要技术,对密码加密的jar包 -->
 		<!-- 同样的数据,消息摘要相同
